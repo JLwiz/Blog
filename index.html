@@ -4,17 +4,39 @@
 </head>
 <html lang="en-US">
     <body>
+
         <main id="maincontainer">
-            <ul>
-                <li><a class="active" href="#home">home</a></li>
-            </ul>
+            <!-- An action bar to work on. -->
+            <div>
+                <ul>
+                    <li><a class="active" href="#home">home</a></li>
+                </ul>
+            </div>
+            <!-- Blog post 1. -->
             <div class="entrybox">
-                <h2>some name</h2>
+                <h2>CSS Syntax and External Stylesheets</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum varius eros in mattis. Mauris placerat varius augue in rutrum. Vestibulum lobortis a felis nec consequat. Aenean vehicula mi egestas nisl dignissim venenatis. In orci quam, posuere eget felis a, molestie viverra neque. Nulla facilisi. Donec accumsan risus ut metus rhoncus interdum. Suspendisse diam est, efficitur sit amet ultricies at, consectetur in lorem. Etiam sed augue a magna condimentum elementum ut vitae nisl. Vestibulum euismod metus ante, ac rutrum mauris viverra ac. Nulla dignissim eget urna non elementum. Aliquam eros ante, iaculis eu ex dictum, placerat convallis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio augue, cursus et massa eu, fringilla dapibus justo.
+                        The creation of CSS files provide alot of functionality and formatting for html files,
+                    and are a core actor in webpage development. Through some experimenting and practice, the 
+                    CSS language provides a plethora of features important to any webpage - such as: color coding elements,
+                    margin sizing, and even gradiant color generation. Overall, the CSS files and 
+                    <a href="https://www.w3schools.com/css/css_syntax.ASP">syntax</a> for webpage customization
+                    are easy to follow - much easier than html. To start of with using CSS to apply different formats to standard html, 
+                    you must first select the html element(s) that you wish to apply some format to. Once the element is selected, 
+                    by specifying with curly brackets afterwards (Element{}), properties may be applied to within the brackets to
+                    manipulate the formatting of the html. The property that is selected is followed by a colon and then a modifying value,
+                    as can be shown in the example below.<img class="center" src="\images\CSS Syntax.png"></img>
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum varius eros in mattis. Mauris placerat varius augue in rutrum. Vestibulum lobortis a felis nec consequat. Aenean vehicula mi egestas nisl dignissim venenatis. In orci quam, posuere eget felis a, molestie viverra neque. Nulla facilisi. Donec accumsan risus ut metus rhoncus interdum. Suspendisse diam est, efficitur sit amet ultricies at, consectetur in lorem. Etiam sed augue a magna condimentum elementum ut vitae nisl. Vestibulum euismod metus ante, ac rutrum mauris viverra ac. Nulla dignissim eget urna non elementum. Aliquam eros ante, iaculis eu ex dictum, placerat convallis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio augue, cursus et massa eu, fringilla dapibus justo.
+                        CSS code can be quick to make the html code look cluttered. To maintain some readability of html, it is
+                    more beneficial to link a .css file for general formatting. This is done through the 
+                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">link</a></code> element. 
+                    By specifying the relationship to the stylesheet 
+                    (<code><a href="https://www.w3schools.com/tags/att_a_rel.asp">rel="stylesheet"</a></code>), and the hypertext reference 
+                    (<code><a href="https://www.w3schools.com/tags/att_a_href.asp">href="docName.css</a></code>), this can be overcome.
+                    Though the use of external style sheets provide a lot of flexability in how CSS affects the html code; CSS stylesheets
+                    still can have draw backs. External style sheets can also cause the load speed of the connected webserver to slow due to the 
+                    increase in download times for due to the added file.
                 </p>
             </div>
         </main>
