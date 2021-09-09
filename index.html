@@ -48,9 +48,37 @@
             <!-- Blog Post 2 -->
             <div class = "entrybox">
                 <header>
-                    <h2>Title</h2>
+                    <h2>Linking JS and a Clock Script</h2>
                     <h3 class ="date">09/09/2021</h3>
                 </header>
+                <p>
+                    Javascript is an object-oriented language that implements interactive elements into a web page.
+                    To link javascript into an html file, you must first implement a <code>&ltscript&gt&ltscript/&gt</code> tag;
+                    unlike css styleguides, as discussed in the last post, a source must be declared within the <code>&ltscript&gt</code> part of the script tag.
+                    This declaration is done by specifying the source then the file name like so:
+                </p>  
+                    <div class = "codeBox">
+                        <p>
+                            <code class = "center"><b>&ltscript src="scriptname.js"&gt&ltscript/&gt</b></code>
+                        </p>
+                    </div>
+                <p>
+                    To get started on writing the first javascript file for this web page is not all that difficult.
+                    In order to create a variable in javascript you must first declare the type <code>var</code> - javascript
+                    will interpret the variable type based of what the assignment is. Javascript uses functions to process calls from html files,
+                    which allow for verbose scripting calls. To get the time, you must first create a new
+                    a new function, in which, you next can create a <code>Date</code> object (that is built into the javascript library) with the <code>new</code> modifier. Next, call the <code>.getHours(), .getMinutes(), and .getSeconds()</code> 
+                    functions on the <code>Date</code> object by assigning them new variables. Once that is done, you need to specify that you want the javascript
+                    to process the request based of the id of a tag in within the document which is calling the function as seen below.
+                </p>
+                <img class = "center" src = "images/clockExample.PNG"></img>
+                <script src = "clockScript.js"></script>
+                <div style = "margin: 20px;">
+                    <button class = "center" type = "button" onclick="getTime()";>Show Time</button>
+                </div>
+                <div id = "clockDisplay" class="displayBox">
+                    <!-- <p id = "clockDisplay" class="center"></p> -->
+                </div>
             </div>
         </main>
     </body>
