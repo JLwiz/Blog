@@ -44,6 +44,13 @@ div.displayBox {
     border-style: solid;
     border-width: 1px;
 }
+.imageBox {
+    display: flex;
+    flex-direction: column;
+    margin : 0 auto;
+    background-color: #f7f7f7; 
+    width :50%;
+}
 
 #maincontainer {
     padding-top: 0;
