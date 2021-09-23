@@ -105,3 +105,7 @@ button.dateButton {
     display: inline-block;
     margin : 0 auto;
 }
+.pngSize {
+    width : 100%;
+    height : 70%;
+}
